@@ -23,4 +23,8 @@ export default {
   color: #2c3e50;
   box-sizing: border-box;
 }
+.aa {
+  position: fixed;
+  top: 0;
+}
 </style>
