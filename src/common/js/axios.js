@@ -9,6 +9,6 @@ requests.interceptors.request.use(config => {
       if (token) {
         config.headers['token'] = token // 让每个请求携带自定义 token 请根据实际情况自行修改
       }
-      return config
+      returcn config
 })
 export default requests
