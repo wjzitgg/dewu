@@ -90,8 +90,9 @@
 <script>
     // 1引入组件
     import TapBar from '@/components/tapBar'
-    // 1.1注入
+   
     export default {
+         // 1.1注入
          components: {
             TapBar
         },
@@ -104,12 +105,15 @@
             };
         },
         created() {
-            this.rq.get('/user/integral_record').then(res=>{
-                console.log(res)
-            })
+            this.appget();
         },
         methods: {
-            
+            appget() {
+                this.axios.post('index/banner',{type:0}).then(res=>{
+                    
+                console.log(res)
+            })
+            }
         }
     }
 </script>

@@ -14,7 +14,7 @@ import '@/common/font/icon.css'
 import '@/common/js/rem.js'
 //axios请求组件
 import requests from '@/common/js/axios.js'
-Vue.prototype.rq = requests  // 此处命名为rq,你可以改
+Vue.prototype.axios = requests  // 此处命名为rq,你可以改
 
 
 /* eslint-disable no-new */
